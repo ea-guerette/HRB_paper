@@ -266,7 +266,7 @@ When the fire is dominated by flaming combustion, the modified combustion effici
 There are variants on how to apply the equations above, see \citet{Paton-Walsh2014} for a discussion. In this project, we chose the same approach as in \citet{Paton-Walsh2014} to process the open-path FTIR data and calculated emission factors for CO and CO$_2$ using Eq. \ref{eq:EF:delta_ratio} with $ \frac{C_X}{C_T} $ calculated using the total excess amounts of each gas detected by summing over the excess amounts from each measurement. The emission factors of other species were calculated using Eq.~\ref{eq:EF:from_ER}.
 Similarly, the MCE of a fire sampled by OP-FTIR was determined from the total excess amounts of CO$_2$ and CO detected by the open-path system (i.e. by summing the excess amounts from each measurement recorded). These MCE values are used to determine whether the emission factors of the species measured by OP-FTIR have a dependence on MCE. 
 
-For grab samples, two variants of the analysis were completed. The first one was used to derive emission factors and MCE values to evaluate whether the emission factors of the species measured only in the grab samples have a dependence on MCE. For this analysis, emission factors for CO, CO$_2$ and CH$_4$ were calculated for each individual grab sample using Eq.~\ref{eq:EF:delta_ratio}, with C$_T$ calculated as the sum of CO$_2$, CO and CH$_4$ only. Although many more carbon-containing species were measured in the grab samples, only CO, CO$_2$ and CH$_4$ were successfully quantified in every single grab sample. For consistency, they were therefore the only species included in the calculation. Doing so inflates the emission factors by up to a few percent (< $5 \%$) \citep{Gilman2015,Yokelson2013}. The emission factors for CO and CO$_2$ were then used with Eq.~\ref{eq:EF:from_ER} and the emission ratios determined for individual fires, to derive emission factors for each fire. MCE was calculated for each sample using Eq.~\ref{eq:MCE} and an average value determined for each fire. These MCE values are indicative of the type of combustion (e.g. flaming vs. smouldering) captured by the grab sampling, and are not necessarily representative of the whole fire. As an example, the average MCE of the grab samples collected at the Gulguer Plateau fire - where grab samples were mostly collected from smouldering logs - was 0.78 $\pm$ 0.09, whereas a fire-integrated value of 0.90 was measured by OP-FTIR \citep{Paton-Walsh2014}.
+For grab samples, two variants of the analysis were completed. The first one was used to derive emission factors and MCE values to evaluate whether the emission factors of the species measured only in the grab samples have a dependence on MCE. For this analysis, emission factors for CO$_2$, CO and CH$_4$ were calculated for each individual grab sample using Eq.~\ref{eq:EF:delta_ratio}, with C$_T$ calculated as the sum of CO$_2$, CO and CH$_4$ only. Although many more carbon-containing species were measured in the grab samples, only CO$_2$, CO and CH$_4$ were successfully quantified in every single grab sample. For consistency, they were therefore the only species included in the calculation. Doing so inflates the emission factors by up to a few percent (< $5 \%$) \citep{Gilman2015,Yokelson2013}. The emission factors for CO and CO$_2$ were then used with Eq.~\ref{eq:EF:from_ER} and the emission ratios determined for individual fires, to derive emission factors for each fire. MCE was calculated for each sample using Eq.~\ref{eq:MCE} and an average value determined for each fire. These MCE values are indicative of the type of combustion (e.g. flaming vs. smouldering) captured by the grab sampling, and are not necessarily representative of the whole fire. As an example, the average MCE of the grab samples collected at the Gulguer Plateau fire - where grab samples were mostly collected from smouldering logs - was 0.78 $\pm$ 0.09, whereas a fire-integrated value of 0.90 was measured by OP-FTIR \citep{Paton-Walsh2014}.
 
 The second variant was used to determine ecosystem-average emission factors for the species measured only in the grab samples. In this case, we used Eq.~\ref{eq:EF:from_ER} with the emission ratios derived from combining all data together, and the emission factors for CO and CO$_2$ derived from the in situ OP-FTIR measurements at the NSW fires. If the emission ratio for a given VOC was derived using another VOC (instead of CO or CO$_2$), their emission ratio was first converted to an emission ratio to CO or CO$_2$ using the emission ratio of their reference VOC to CO or CO$_2$. The uncertainty on the resulting emission ratio to CO (or CO$_2$) was calculated by adding the uncertainties in quadrature. 
 
@@ -394,7 +394,7 @@ The average observed MCE of 0.92 at the Victorian fires is higher than that repo
 
 The MCE dependence of the emissions of carbon-containing species from all fires sampled using OP-FTIR as part of this ground-based study is explored in this section. The emission factors calculated for each fire sampled by OP-FTIR are plotted as a function of MCE in Fig.~\ref{fig:MCE_dep}. The regression statistics are listed in Table~\ref{table:MCE_dep}. As the range of observed MCE is relatively narrow, the relationship is well represented using a linear regression. For larger MCE ranges, an exponential fit may be more appropriate (e.g. \citet{Meyer2012} suggest an exponential fit for CH$_4$). 
 
-The magnitude of the slope and the intercept listed in Table~\ref{table:MCE_dep} reflects the magnitude of the emission factor for that species. The strength of the relationship is judged from the coefficient of determination (R$^2$) and the p-value (the probability that the slope is zero). A poor R$^2$ indicates that MCE alone cannot explain the variability in EF. 
+The magnitude of the slope and the intercept listed in Table~\ref{table:MCE_dep} reflects the magnitude of the emission factor for that species. The strength of the relationship is judged from the coefficient of determination (R$^2$) and the p-value (the probability that there is no correlation between x and y). A poor R$^2$ indicates that MCE alone cannot explain the variability in EF. 
 
 \begin{figure}
   \includegraphics[width=12 cm]{C:/Users/eag873/Documents/GitHub/HRB_paper/figures/MCE_v3.png}
@@ -495,7 +495,7 @@ The good agreement for MCE between platforms and fire type could be coincidental
  No PM data are available from the studies listed in Table~\ref{table:MCE_comp}, but CH$_4$ data are. The average emission factor measured for CH$_4$ in Australian temperate forests is 3.5 (0.8) g kg$^{-1}$ dry fuel burnt (this value excludes the emission factor reported by \citet{Rea2016} as it may have been influenced by other sources). The average for the ground-based OP-FTIR measurements is 3.5 (0.9) g kg$^{-1}$ dry fuel burnt. These are in excellent agreement with the emission factor for CH$_4$  of 3.4 (0.9) g kg$^{-1}$ dry fuel burnt listed for temperate forests in \citet[Table S4, February 2015 update]{Akagi2011}. 
 
 \subsection{Comparison of VOC emission ratios and emission factors measured for temperate ecosystems}
-Measurements of VOC emission factors have been more limited for Australian temperate forests. Enhancement ratios to CO for methanol, ammonia, formic acid, formaldehyde, acetylene, ethene and ethane were measured in lofted plumes from wildfires by ground-based solar remote sensing Fourier transform spectrometry \citep{Paton-Walsh2005, Paton-Walsh2008} and satellite-based spectroscopic measurements \citep{Young2011,Glatthor2013}. These were compared to the emission ratios measured in fresh smoke by OP-FTIR in NSW by \citet{Paton-Walsh2014}. They found good agreement for methanol and formaldehyde, but evidence for depletion of ammonia and ethene and formation of formic acid in aged smoke. 
+Measurements of VOC emission factors have been more limited for Australian temperate forests. Enhancement ratios to CO for methanol, ammonia, formic acid, formaldehyde, acetylene, ethene and ethane were measured in lofted plumes from wildfires by ground-based solar remote sensing Fourier transform spectrometry \citep{Paton-Walsh2005, Paton-Walsh2008} and satellite-based spectroscopic measurements \citep{Young2011,Glatthor2013}. These were compared to the emission ratios measured in fresh smoke by OP-FTIR in NSW by \citet{Paton-Walsh2014}. They found good agreement for methanol and formaldehyde, and evidence for depletion of ammonia and ethene and formation of formic acid in aged smoke. 
  
 The only other study to have reported emission factors for a significant number of trace gas species is that of \citet{Lawson2015}. They report emission ratios and emission factors for trace gases and aerosol from opportunistic measurement of a biomass burning plume impacting Cape Grim Baseline Air Pollution Station in Tasmania in February 2006. The plume was advected to the Station from a fire in coastal heath on a nearby island, mostly at night (from 23:00 AEST until 09:00 AEST). The vegetation burnt in the Robbins Island fire is similar to what typically burns in a prescribed fire, so their emission ratios and emission factors for VOCs are listed alongside ours in Table~\ref{table:comp}. Emission factors from  \citet[Table S4, February 2015 update]{Akagi2011} are also included for comparison. For some of the species measured by SIFT-MS in this study and by PTR-MS in \citet{Lawson2015}, the reported emission factors are sum measurements of several species, including potential contributions from unidentified compounds. In these cases, the emission factors of all species that could contribute were sourced from \citet[Table S4, February 2015 update]{Akagi2011} and listed in the last column of Table~\ref{table:comp}. 
 
@@ -509,20 +509,20 @@ The initial mixture of trace gases emitted by a fire is one of the factors (alon
 The use of Australian-specific emission factors is therefore recommended in studies looking at the regional impact of fires in Australian temperate forests. 
 
 
- \tablecaption{Comparison of VOC emission ratios and emission factors reported in the literature for fires in temperate forests in Australia and in North America. Emission ratios (ER) are in mol mol$^{-1}$ and emission factors (EF) are in g kg$^{-1}$ dry fuel burnt. Unidentified species that are likely to contribute to the signal measured by SIFT-MS are indicated by a question mark in the last column.}
+ \tablecaption{Comparison of VOC emission ratios and emission factors reported in the literature for fires in temperate forests in Australia and in North America. Emission ratios (ER) are in mol mol$^{-1}$ and emission factors (EF) are in g kg$^{-1}$ dry fuel burnt. Unidentified species that are likely to contribute to the signal measured by SIFT-MS are listed by their molar mass in the last column.}
   \tablehead{
   \hline
    &\multicolumn{6}{c}{This study}&\multicolumn{3}{c}{References} \\
   &\multicolumn{4}{c}{White cell FTIR and SIFT-MS analysis of grab samples}&\multicolumn{2}{c}{Open-path FTIR}&\multicolumn{2}{c}{Lawson et al.}&Akagi et al. \\
   &\multicolumn{4}{c}{- prescribed fires in NSW}&\multicolumn{2}{c}{- average values}&\multicolumn{2}{c}{2015}&2011 \\
   Species & MM & ref.  & ER & EF &ER &EF &ER &EF & EF   \\
-  %& &species & & & & & & & \\%temperate  \\
- % &  & & & & & & & & forests \\
+  %& &species & & & & & & & \\temperate  \\
+  %&  & & & & & & & & forests \\
   \hline}
 % \tablelasttail{$^a$ includes benzaldehyde}
 \begin{supertabular}{l l l r l r l l l c}
     Ammonia & 17 &  CO & & & 0.023  & 1.6 (0.6) & & & 0.8 (0.4) \\
-  &  & & & & (0.007)& & & & \\
+     &  & & & & (0.007)& & & & \\
   Acetylene & 26  & CO$_2$ & 0.00037  & 0.35 $\pm$ 0.09 & & & & & 0.26 (0.04) \\ 
   &&&$\pm$ 0.00008&&&&&&\\
   Hydrogen  & 27 & CO & 0.0063  & 0.7 $\pm$ 0.2 & & & 0.0057 & 0.7 & 0.7 (0.2) \\ 
@@ -547,31 +547,31 @@ The use of Australian-specific emission factors is therefore recommended in stud
   sum of acetone  & 58 & CO & 0.0034 & 0.8 $\pm$ 0.2 & & & 0.002 &0.54 & 0.54 (0.15)  \\
   and propanal &&&$\pm$ 0.0005&&&&&& (acetone) \\
   & &  & & & & & & & 0.11 (0.05) \\
-  & &  & & & & & & & (propanal)\\
+  & &  & & & & & & & (propanal)\\ [20mm]
   Acetic acid & 60  &CO & & & 0.020 & 4.5 (1.6) & & & 2.1 (0.7) \\
-  &&&&&(0.009)&&&&\\ [14mm]
+  &&&&&(0.009)&&&&\\ 
   Pyrrole & 67 & CO & 0.0006 & 0.16 $\pm$ 0.08 & & & && 0.012 (0.009) \\
   &&&$\pm$ 0.0003&&&&&&(pyrrole) \\
-  & & & & & & & & & 0.047 (0.026) \\
-  & &  & & & & & & & (? MM67)\\
+  & & & & & & & & & 0.047 (0.026) (MM67)\\
+ % & &  & & & & & & & (MM67)\\
   sum of furan  & 68  & CO & 0.0019 & 0.5 $\pm$ 0.1 & & & 0.0053 & 1.7 & 0.3 (0.1)  \\ 
   and isoprene &&&$\pm$ 0.0003&&&&&& (furan)\\ 
   & &  & & &&&&&0.10(0.004) \\
   & &  & & &&&&&(isoprene)\\
-  &&&&&&&&& 0.18 (0.08) \\
-  &&&&&&&&& (? MM68)\\
+  &&&&&&&&& 0.18 (0.08) (MM68) \\
+%  &&&&&&&&& (MM68)\\
   sum of MACR,   & 70 &CO & 0.0035 & 1.0 $\pm$ 0.3 & & & 0.0012 & 0.38 & 0.05 (0.02)  \\ 
   MVK and  & &  & $\pm$ 0.0009 & && & & & (methacrolein)) \\
   2-butenal&&&&&&&&&0.16 (0.04) \\
   &&&&&&&&& (methyl vinyl ketone) \\
   &&&&&&&&& 0.2 (0.1) \\
   &&&&&&&&& (2-butenal)\\
-  &&&&&&&&& 0.3 (0.2) \\
-  &&&&&&&&& (? MM70) \\
+  &&&&&&&&& 0.3 (0.2) (MM70) \\
+%  &&&&&&&&& (? MM70) \\
   Butanone & 72 & CO & 0.00082 & 0.25 $\pm$ 0.05& & & 0.001 & 0.35 & 0.13 (0.04)  \\ 
   &&&$\pm$ 0.00007&&&&&& (butanone) \\
-  &&&&&&&&&0.09 (0.04) \\
-  &&&&&&&&&(? MM72)\\
+  &&&&&&&&&0.09 (0.04) (MM72) \\
+%  &&&&&&&&&(MM72)\\
   Benzene & 78 &CO$_2$ & 0.00014 & 0.39 $\pm$ 0.07 & & & & 0.69 & 0.3 (0.1) \\
   &&&$\pm$ 0.00002&&&&&&\\
   Toluene & 92 & CO & 0.0006 & 0.23 $\pm$ 0.05 & & &0.00069 &0.30 & 0.19 (0.05) \\ 
